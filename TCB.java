@@ -21,9 +21,10 @@ public class TCB {
 
         // The following code is added for the file system
         ftEnt = new FileTableEntry[MAX_BLOCKS];
-        for ( int i = 0; i < MAX_BLOCKS; i++ )
+        for ( int i = 0; i < MAX_BLOCKS; i++ ) {
             ftEnt[i] = null;         // all entries initialized to null
-        // fd[0], fd[1], and fd[2] are kept null.
+            // fd[0], fd[1], and fd[2] are kept null.
+        }
     }
 
     /**
